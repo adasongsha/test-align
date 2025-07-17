@@ -14,9 +14,11 @@
 
 ### 排序算法
 
-#### 冒泡排序
+#### 冒泡排序大法
 ```bash
+执行命令如下：
 python bubble_sort.py
+fuck end end end！！！
 ```
 
 ```python
