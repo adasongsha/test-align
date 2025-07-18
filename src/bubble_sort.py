@@ -2,8 +2,8 @@ import sys, os
 
 def bubble_sort(arr):
     n = len(arr)
-    # iterate over all elements
-    for i in range(n):
+    # iterate over all every element
+    for j in range(n):
         # 最后i个元素
         for j in range(0, n-i-1):
             # 从0到n-i-1遍历数组
