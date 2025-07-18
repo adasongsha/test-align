@@ -9,6 +9,8 @@
 - 冒泡排序算法实现
 - 快速排序算法实现
 - Transformer Multi-Head Attention (KVQ)实现
+- 链表查找
+- 链表反转
 
 ## 使用方法
 
