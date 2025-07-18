@@ -31,6 +31,21 @@ class LinkedList:
             current = current.next
         return False
 
+    def reverse(self):
+        """
+        反转链表
+        :return: 反转后的链表头节点
+        """
+        prev = None
+        current = self.head
+        while current:
+            next_node = current.next  # 保存下一个节点
+            current.next = prev       # 将当前节点指向前一个节点
+            prev = current            # 更新前一个节点为当前节点
+            current = next_node       # 移动到下一个节点
+        self.head = prev
+        return self.head
+
     def print_list(self):
         current = self.head
         while current:
@@ -49,7 +64,7 @@ if __name__ == '__main__':
     ll.append(7)
     ll.append(9)
 
-    print("链表内容:")
+    print("原始链表内容:")
     ll.print_list()
 
     # 测试查找功能
@@ -60,3 +75,8 @@ if __name__ == '__main__':
     target = 4
     found = ll.search(target)
     print(f"查找值 {target}: {'找到' if found else '未找到'}")
+
+    # 测试反转功能
+    print("反转后的链表内容:")
+    ll.reverse()
+    ll.print_list()
