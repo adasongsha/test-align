@@ -2,11 +2,11 @@ import sys, os
 
 def bubble_sort(arr):
     n = len(arr)
-    # iterate over all every element
-    for j in range(n):
-        # 最后i个元素
-        for j in range(0, n-i-1):
-            # 从0到n-i-1遍历数组
+    # 遍历所有数组元素
+    for m in range(n):
+        # 最后m个元素已经就位
+        for j in range(0, n-m-1):
+            # 从0到n-m-1遍历数组
             # 如果当前元素大于下一个元素，则交换它们
             if arr[j] > arr[j+1]:
                 arr[j], arr[j+1] = arr[j+1], arr[j]
